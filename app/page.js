@@ -27,8 +27,8 @@ export default function Home() {
         
         <button
           onClick={() => {
-            const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE5MzI2MTU5MjYsImlzcyI6ImRldmtleSIsIm5hbWUiOiJ0ZXN0LXVzZXIiLCJuYmYiOjE2MzI2MTU5MjYsInN1YiI6InRlc3QtdXNlciIsInZpZGVvIjp7InJvb20iOiJ0ZXN0Iiwicm9vbUpvaW4iOnRydWUsImNhblB1Ymxpc2giOnRydWUsImNhblN1YnNjcmliZSI6dHJ1ZX19.qkxRBJakwIG4T3re1UbEH-MXeNFH8B6Iu0cEZ75bF_Y';
-            window.location.href = `https://meet.livekit.io/custom?liveKitUrl=wss://demo.livekit.cloud&token=${token}`;
+            // Open the Agents Playground instead
+            window.open('https://agents-playground.livekit.io/', '_blank');
           }}
           style={{
             backgroundColor: '#3b82f6',
@@ -58,6 +58,12 @@ export default function Home() {
         
         <div style={{ marginTop: '3rem', fontSize: '0.9rem', opacity: 0.6 }}>
           <p>Powered by LiveKit • OpenAI • ElevenLabs</p>
+          <p style={{ marginTop: '1rem', fontSize: '0.8rem' }}>
+            After clicking, connect with:<br/>
+            URL: wss://demo.livekit.cloud<br/>
+            API Key: devkey<br/>
+            API Secret: secret
+          </p>
         </div>
       </div>
     </div>
