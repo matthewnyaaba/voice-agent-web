@@ -2,8 +2,10 @@
 
 export default function Home() {
   const connectToAgent = () => {
-    // For now, redirect to LiveKit Meet with demo server
-    window.open('https://meet.livekit.io/custom?url=wss://demo.livekit.cloud', '_blank');
+    // For now, use the direct token
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE5MzI2MTU5MjYsImlzcyI6ImRldmtleSIsIm5hbWUiOiJ0ZXN0LXVzZXIiLCJuYmYiOjE2MzI2MTU5MjYsInN1YiI6InRlc3QtdXNlciIsInZpZGVvIjp7InJvb20iOiJ0ZXN0Iiwicm9vbUpvaW4iOnRydWUsImNhblB1Ymxpc2giOnRydWUsImNhblN1YnNjcmliZSI6dHJ1ZX19.qkxRBJakwIG4T3re1UbEH-MXeNFH8B6Iu0cEZ75bF_Y';
+    
+    window.open(`https://meet.livekit.io/custom?liveKitUrl=wss://demo.livekit.cloud&token=${token}`, '_blank');
   };
 
   return (
