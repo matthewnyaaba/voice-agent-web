@@ -27,7 +27,7 @@ export default function Home() {
         
         <button
           onClick={() => {
-            // Open the Agents Playground instead
+            // This is CORRECT - opens playground
             window.open('https://agents-playground.livekit.io/', '_blank');
           }}
           style={{
